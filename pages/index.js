@@ -14,7 +14,7 @@ export default function Index({ posts, globalData }) {
 
   useEffect(() => {
     const intervalId = setInterval(async () => {
-      const res = await fetch('http://localhost:3000/api/echo');
+      const res = await fetch('https://idyllic-sable-39bc3a.netlify.app/api/echo');
       const newData = await res.json();
 
       // Actualizar solo si los datos son diferentes de los últimos datos agregados
